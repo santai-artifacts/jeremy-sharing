@@ -12,12 +12,12 @@
     --bg: #0f1117;
     --panel: #1a1d27;
     --grid: #20242f;
-    --snake: #4ade80;
-    --snake-head: #86efac;
+    --snake: #ec4899;
+    --snake-head: #f9a8d4;
     --food: #f87171;
     --text: #e6e8ee;
     --muted: #8b90a0;
-    --accent: #4ade80;
+    --accent: #ec4899;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -266,7 +266,7 @@
 
     // Snake
     snake.forEach((s, i) => {
-      ctx.fillStyle = i === 0 ? "#86efac" : "#4ade80";
+      ctx.fillStyle = i === 0 ? "#f9a8d4" : "#ec4899";
       roundRect(s.x * CELL + 1.5, s.y * CELL + 1.5, CELL - 3, CELL - 3, 5);
     });
   }
